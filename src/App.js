@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import './App.css';
 import { useTelegram } from './hooks/useTelegram';
-import Header from "./components/Header/header"
+import Headerr from './components/Header/header';
 
 
 
@@ -15,7 +15,7 @@ tg.ready();
 
   return (
     <div className="App">
-      <Header />
+      <Headerr />
     <button onClick={onToggleButton}>toogle</button>
       
     </div>

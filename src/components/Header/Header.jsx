@@ -3,7 +3,7 @@ import Button from "../Button/Button"
 import './Header.css'
 import { useTelegram } from "../../hooks/useTelegram";
 
-const Header = () => {
+const Headerr = () => {
 
   const {user, onClose} = useTelegram();
 
@@ -17,4 +17,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Headerr;
