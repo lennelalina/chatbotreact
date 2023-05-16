@@ -27,12 +27,11 @@ const ProductList = () => {
 
     const onSendData = useCallback(() => {
         const data = {
-            products: addedItems,
             totalPrice: getTotalPrice(addedItems),
             queryId,
         }
         tg.sendData(JSON.stringify(data));
-    }, [addedItems])
+    }, totalPrice)
     //     fetch('http://85.119.146.179:8000/web-data', {
     //         method: 'POST',
     //         headers: {
