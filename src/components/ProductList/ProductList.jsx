@@ -38,7 +38,7 @@ const ProductList = () => {
             },
             body: JSON.stringify(data)
         })
-    }, [addedItems], totalPrice)
+    }, [addedItems])
 
 
     
