@@ -7,12 +7,9 @@
 }
 
 
-.img {
-    width: 100%;
-    background: lightgray;
-    height: 100px;
+.Image {
+    height: 200px;
     margin: 0 auto;
-    background: var(--tg-theme-button-color);
 }
 
 .description {
