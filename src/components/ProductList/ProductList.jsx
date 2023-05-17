@@ -32,7 +32,7 @@ const getTotalPrice = (items = []) => {
 
 const ProductList = () => {
     const [addedItems, setAddedItems] = useState([]);
-    const {tg, queryId} = useTelegram();
+    const {tg, queryId, onClose} = useTelegram();
 
     const onSendData = useCallback(() => {
         const data = {
@@ -52,7 +52,7 @@ const ProductList = () => {
 
     
     useEffect(() => {
-        tg.onEvent('mainButtonClicked', onSendData)
+        tg.onEvent('mainButtonClicked', onClose)
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
