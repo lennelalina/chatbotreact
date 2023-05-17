@@ -4,15 +4,24 @@ import ProductItem from "../ProductItem/ProductItem";
 import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
+import umiv from "../../img/umiv2.jpg";
+import shower from "../../img/shower.jpg";
+import shower2 from "../../img/shower2.jpg";
+import toalet from "../../img/toalet.jpg";
+import toalet2 from "../../img/toalet2.jpg";
+import wanna from "../../img/wanna1.jpg";
+import wanna2 from "../../img/wanna2.jpg";
+import wanna3 from "../../img/wanna3.jpg";
+
 const products = [
-    {id: '1', title: 'Джинсы', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '2', title: 'Куртка', price: 12000, description: 'Зеленого цвета, теплая'},
-    {id: '3', title: 'Джинсы 2', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '4', title: 'Куртка 8', price: 122, description: 'Зеленого цвета, теплая'},
-    {id: '5', title: 'Джинсы 3', price: 5000, description: 'Синего цвета, прямые'},
-    {id: '6', title: 'Куртка 7', price: 600, description: 'Зеленого цвета, теплая'},
-    {id: '7', title: 'Джинсы 4', price: 5500, description: 'Синего цвета, прямые'},
-    {id: '8', title: 'Куртка 5', price: 12000, description: 'Зеленого цвета, теплая'},
+    {id: '1', title: 'Умывальник керамический П45', price: 5000, Image: umiv, description: 'подвесной, 60см'},
+    {id: '2', title: 'Душ мраморный shell', price: 12000,Image: shower,  description: 'Высота 2.05, пластик стенка'},
+    {id: '3', title: 'Душ керамический 200S', price: 5000, Image: shower2, description: 'Встроеный, стекло стенка'},
+    {id: '4', title: 'Унитаз керамический shell', price: 1220,Image: toalet, description: 'Подвесной, цвет молочный'},
+    {id: '5', title: 'Унитаз мраморный', price: 5000,Image: toalet2, description: 'Встроенный, цвет белый'},
+    {id: '6', title: 'Ванна мраморная shell', price: 6000,Image: wanna, description: 'Встроенная, с ножками 4 см'},
+    {id: '7', title: 'Ванна чугунная А23', price: 5500, Image: wanna2,description: 'Чугун, цвет белый'},
+    {id: '8', title: 'Ванна встроеная керамическая', price: 12000,Image: wanna3, description: '2,05 м, цвет молочный'},
 ]
 
 const getTotalPrice = (items = []) => {
