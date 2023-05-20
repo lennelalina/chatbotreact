@@ -91,9 +91,9 @@ const Form = () => {
                 <option value={'legal'}>Юр. лицо</option>
             </select>
             <select value={pay} onChange={onChangePay} className={'select'}>
-                <option value={'card'}>VISA/Mastercard</option>
-                <option value={'phonePay'}>ApplePay/SamsungPay</option>
-                <option value={'oplati'}>Oplati</option>
+                <option value={'VISA/Mastercard'}>VISA/Mastercard</option>
+                <option value={'ApplePay/SamsungPay'}>ApplePay/SamsungPay</option>
+                <option value={'Oplati'}>Oplati</option>
             </select>
         </div>
     );
