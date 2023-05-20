@@ -41,7 +41,7 @@ const ProductList = () => {
             queryId
         } 
         tg.sendData(JSON.stringify(data));
-    }, [products,totalPrice,queryId])
+    }, [products,addedItems,queryId])
 
     //     fetch('http://85.119.146.179:8000/web-data', {
     //         method: 'POST',
